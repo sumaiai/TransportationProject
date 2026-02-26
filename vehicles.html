@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vehicles</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Transport Admin</h2>
+            <a href="index.html">Dashboard</a>
+            <a href="vehicles.html">Vehicles</a>
+            <a href="customers.html">Customers</a>
+            <a href="employees.html">Employees</a>
+            <a href="rides.html">Rides</a>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <h1>Vehicles</h1>
+            </div>
+
+            <div class="form">
+                <input id="plate" placeholder="Plate Number">
+                <input id="type" placeholder="Type">
+                <input id="capacity" placeholder="Capacity">
+                <button onclick="addVehicle()">Add Vehicle</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Plate</th>
+                        <th>Type</th>
+                        <th>Capacity</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="vehicleTable"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script/vehicles.js"></script>
+</body>
+
+</html>

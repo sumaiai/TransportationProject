@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employees</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Transport Admin</h2>
+            <a href="index.html">Dashboard</a>
+            <a href="vehicles.html">Vehicles</a>
+            <a href="customers.html">Customers</a>
+            <a href="employees.html">Employees</a>
+            <a href="rides.html">Rides</a>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <h1>Employees</h1>
+            </div>
+
+            <div class="form">
+                <input id="name" placeholder="Name">
+                <input id="role" placeholder="Role">
+                <input id="contact" placeholder="Contact">
+                <button onclick="addEmployee()">Add Employee</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Contact</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeTable"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script/employees.js"></script>
+</body>
+
+</html>

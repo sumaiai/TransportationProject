@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rides</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Transport Admin</h2>
+            <a href="index.html">Dashboard</a>
+            <a href="vehicles.html">Vehicles</a>
+            <a href="customers.html">Customers</a>
+            <a href="employees.html">Employees</a>
+            <a href="rides.html">Rides</a>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <h1>Rides</h1>
+            </div>
+
+            <div class="form">
+                <select id="vehicleSelect"></select>
+                <select id="customerSelect"></select>
+                <select id="employeeSelect"></select>
+                <input id="pickup" placeholder="Pickup Location">
+                <input id="destination" placeholder="Destination">
+                <button onclick="addRide()">Add Ride</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vehicle</th>
+                        <th>Customer</th>
+                        <th>Driver</th>
+                        <th>Pickup</th>
+                        <th>Destination</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="rideTable"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script/rides.js"></script>
+</body>
+
+</html>
